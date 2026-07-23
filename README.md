@@ -69,10 +69,10 @@ If (Status vazio?)  →  filtra apenas artigos pendentes
 | ------------------------------ | ----------------------------------------------------------------------------------------------------- |
 | **Schedule Trigger**           | Dispara o workflow em intervalos definidos                                                            |
 | **Google Sheets – Get Row(s)** | Lê os artigos cadastrados na planilha                                                                 |
-| **If**                         | Filtra apenas linhas com status pendente                                                              |
+| **Code**                       | Atravez do Js, devolve uma requisição por vez                                                         |
 | **HTTP Request**               | Usa o [Jina AI Reader](https://jina.ai/reader) para extrair o conteúdo de qualquer URL em texto limpo |
 | **HTML**                       | Processa/normaliza o conteúdo extraído                                                                |
-| **Message a Model (Gemini)**   | Gera o resumo do artigo via IA                                                                        |
+| **AI-Agent**                   | Gera o resumo do artigo via IA                                                                        |
 | **Gmail – Send a Message**     | Envia o resumo para o e-mail cadastrado                                                               |
 | **Google Sheets – Update Row** | Atualiza o status da linha processada                                                                 |
 | **No Operation**               | Encerra o fluxo quando não há artigos pendentes                                                       |
@@ -81,10 +81,10 @@ If (Status vazio?)  →  filtra apenas artigos pendentes
 
 ## 📊 Planilha (estrutura esperada)
 
-| Link do Artigo               | Email             | Status         |
-| ---------------------------- | ----------------- | -------------- |
-| https://exemplo.com/artigo-1 | usuario@email.com | _(vazio)_      |
-| https://exemplo.com/artigo-2 | usuario@email.com | Resumo Enviado |
+| Link do Artigo                                                                                            | Email                                     | Status        
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------- |
+| https://tecnoblog.net/responde/o-que-e-rfid-entenda-como-funciona-essa-tecnologia/                        | vinicius.coutinho@hashtagtreinamentos.com | Resumo Enviado |
+| https://tecnoblog.net/responde/o-que-e-li-fi-entenda-a-tecnologia-que-usa-lampadas-para-transmitir-dados/ | nbadavi30@gmail.com                       | Resumo Enviado |
 
 - **Link do Artigo**: URL do conteúdo a ser resumido
 - **Email**: destinatário do resumo
