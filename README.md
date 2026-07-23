@@ -34,31 +34,27 @@ Tudo isso rodando de forma agendada, sem intervenção manual.
 
 ```
 Schedule Trigger
-      │
-      ▼
+       │
+       ▼
 Get row(s) in sheet  →  lê todas as linhas da planilha
-      │
-      ▼
-If (Status vazio?)  →  filtra apenas artigos pendentes
-      │
-      ├── false → No Operation (nada a fazer)
-      │
-      └── true  →
-             │
-             ▼
-        HTTP Request (Jina AI Reader)  →  extrai o conteúdo da página em Markdown
-             │
-             ▼
-        HTML (Extract HTML Content)  →  normaliza o texto extraído
-             │
-             ▼
-        Message a model (Google Gemini)  →  gera o resumo do artigo
-             │
-             ▼
-        Send a message (Gmail)  →  envia o resumo por e-mail
-             │
-             ▼
-        Update row in sheet  →  marca a linha como "Resumo Enviado"
+       │
+       ▼
+Code (codigo em Js)  →  filtra apenas artigos pendentes
+       │
+       ▼
+HTTP Request (Jina AI Reader)  →  extrai o conteúdo da página em Markdown
+       │
+       ▼
+HTML (Extract HTML Content)  →  normaliza o texto extraído
+       │
+       ▼
+Message a model (Google Gemini)  →  gera o resumo do artigo
+       │
+       ▼
+Send a message (Gmail)  →  envia o resumo por e-mail
+       │
+       ▼
+Update row in sheet  →  marca a linha como "Resumo Enviado"
 ```
 
 ---
