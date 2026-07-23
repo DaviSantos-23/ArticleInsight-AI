@@ -1,6 +1,6 @@
-# 📄 Resumo Automático de Artigos com IA (n8n)
+# 📄 ArticleInsight-AI
 
-Automação que monitora uma planilha do Google Sheets com links de artigos, extrai o conteúdo de cada página, gera um resumo com IA (Google Gemini) e envia por e-mail — atualizando o status na planilha ao final de cada execução.
+O Resumo Automático de Artigos com IA (n8n) é uma automação que monitora uma planilha do Google Sheets com links de artigos, extrai o conteúdo de cada página, gera um resumo com IA (Google Gemini) e envia por e-mail — atualizando o status na planilha ao final de cada execução.
 
 ![n8n](./assets/images/tela.png)
 ![Google Sheets](./assets/images/tela2.png)
